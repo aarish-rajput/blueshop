@@ -87,6 +87,7 @@ const Register = ({ history }) => {
                                 name='name'
                                 value={name}
                                 onChange={onChange}
+                                required
                             />
                         </div>
 
@@ -99,6 +100,7 @@ const Register = ({ history }) => {
                                 name='email'
                                 value={email}
                                 onChange={onChange}
+                                required
                             />
                         </div>
 
@@ -111,6 +113,7 @@ const Register = ({ history }) => {
                                 name='password'
                                 value={password}
                                 onChange={onChange}
+                                required
                             />
                         </div>
 

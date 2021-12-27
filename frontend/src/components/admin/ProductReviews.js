@@ -27,10 +27,10 @@ const ProductReviews = () => {
             dispatch(clearErrors())
         }
 
-        if (deleteError) {
-            alert.error(deleteError);
-            dispatch(clearErrors())
-        }
+        // if (deleteError) {
+        //     alert.error(deleteError);
+        //     dispatch(clearErrors())
+        // }
 
         if (productId !== '') {
             dispatch(getProductReviews(productId))
@@ -43,7 +43,7 @@ const ProductReviews = () => {
 
 
 
-    }, [dispatch, alert, error, productId, isDeleted, deleteError])
+    }, [dispatch, alert, error, productId])
 
     const deleteReviewHandler = (id) => {
         dispatch(deleteReview(id, productId))
